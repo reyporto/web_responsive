@@ -1,0 +1,214 @@
+@font-face {
+    font-family: DancingScript;
+    src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+body {
+    background-color: black;
+    font-family: DancingScript;
+    font-size: 14px;
+    margin: auto;
+}a {
+    color: black;
+}header {
+    background-color: #5b7989;
+    border-radius: 10px 10px 0 0;
+    height: 100px;
+}ul {
+    padding: 0;
+}.wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+}.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}.navbar-header {
+    color: #fff;
+    float: left;
+    text-shadow: 2px 2px #02010a;
+    font-size: 30px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 25px;
+}.navbar-nav {
+    float: right;
+    font-size: 25px;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 0;
+}.navbar-nav .nav {
+    padding-left: 0;
+    list-style: none;
+    margin: 0 auto;
+}ul.nav li a {
+    color: #fff;
+}.nav>li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 25px;
+}.text-decoration-none {
+    text-decoration: none;
+}#content {
+    position: inherit;
+    width: 100%;
+    background-color: #82c3a6;
+    text-align: center;
+}footer {
+    background: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 0 0;
+    min-height: 90px;
+    width: 100%;
+}.slidein {
+    position: relative;
+    animation:slidein 0.4s
+}.footer-content>div {
+    float: left;
+    font-size: 20px;
+    text-align: left !important;
+}.footer-content>div i {
+    font-size: 20px;
+    margin-right: 10px;
+}i.fa-linkedin-square {
+    color: #0073b1;
+}i.fa-facebook-official {
+    color: #3b5998;
+}.padding-top-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}.other-content {
+    float: left;
+    background-color: #d5c75f;
+    margin: 0 auto;
+    font-size: 25px;
+}img {
+    box-shadow: 2px 2px #02010a;
+    transition: transform 1s;
+}img.rotate:hover {
+    transform: rotateZ(10deg);
+    box-shadow: 2px 2px #82c3a6;
+}img.translate:hover {
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px #82c3a6;
+}.img-filter-blur {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}.img-filter-grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}.img-filter-sepia {
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}.img-50 {
+    width: 50%;
+}.img-80 {
+    width: 80%;
+}.col-25 {
+    width: 25%;
+}.col-33 {
+    width: 33.333333%;
+}.col-35 {
+    width: 35%;
+}.col-50 {
+    width: 50%;
+}.col-100 {
+    width: 100%;
+}.row>div {
+    float: left;
+    background-color: #d5c75f;
+}
+
+
+@keyframes slidein { 
+    from {
+        bottom:-800px;
+        opacity:0
+    }
+    to {
+        bottom:0;
+        opacity:1
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1280px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+
+@media (max-width: 715px) {
+    .navbar-nav {
+        float: none;
+        display: inline-block;
+        margin-top: 10px;
+    }.navbar-header {
+        float: none;
+        margin-top: 10px;
+        margin-left: 0;
+    }.container {
+        text-align: center;
+    }.col-m-100 {
+        width: 100%;
+    }.img-m-80 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 695px) {
+    .wrapper {
+        width: 97%;
+    }
+}
+
+@media (max-width: 681px) {
+    .wrapper {
+        width: 97%;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        width: 97%;
+    }
+}
+
+@media (max-width: 390px) {
+    header {
+        height: 130px;
+    }.nav>li {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 325px) {
+    header {
+        height: 140px;
+    }.nav>li {
+        margin-right: 10px;
+    }
+}
